@@ -97,6 +97,14 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         {
             switch (e.KeyCode)
             {
+                case Keys.W: m_world.RotationX -= 5.0f; break;
+                case Keys.S: m_world.RotationX += 5.0f; break;
+                case Keys.A: m_world.RotationY -= 5.0f; break;
+                case Keys.D: m_world.RotationY += 5.0f; break;
+                case Keys.Q: m_world.RotationZ += 5.0f; break;
+                case Keys.E: m_world.RotationZ -= 5.0f; break;
+                case Keys.Add: m_world.SceneDistance -= 7.0f; m_world.Resize(); break;
+                case Keys.Subtract: m_world.SceneDistance += 7.0f; m_world.Resize(); break;
                 case Keys.F10: this.Close(); break;
             }
 
