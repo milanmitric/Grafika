@@ -439,6 +439,8 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
 
             // Oslobodi unmanaged resurse
             m_scene.Dispose();
+            m_font.Dispose();
+
         }
 
         #endregion Metode
@@ -450,6 +452,8 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         /// </summary>
         public void Dispose()
         {
+            
+            
             this.Dispose(true);
             GC.SuppressFinalize(this);
         }
