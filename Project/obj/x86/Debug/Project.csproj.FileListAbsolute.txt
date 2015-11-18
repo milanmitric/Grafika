@@ -1,0 +1,10 @@
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\bin\Debug\3D Models\Airplane\Plane.3ds
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\bin\Debug\AssimpNetSample.exe
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\bin\Debug\AssimpNetSample.pdb
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\bin\Debug\AssimpNet.dll
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.MainForm.resources
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.Properties.Resources.resources
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\Project.csproj.GenerateResource.Cache
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\AssimpNetSample.exe
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\obj\x86\Debug\AssimpNetSample.pdb
