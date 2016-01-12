@@ -33,12 +33,20 @@
             this.openGlControl = new Tao.Platform.Windows.SimpleOpenGlControl();
             this.btn_reset = new System.Windows.Forms.Button();
             this.timerAvion = new System.Windows.Forms.Timer(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.timerSijalice = new System.Windows.Forms.Timer(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.numericSFactor = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.numericSInterval = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericGreen = new System.Windows.Forms.NumericUpDown();
+            this.numericRed = new System.Windows.Forms.NumericUpDown();
+            this.numericBlue = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericSFactor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGreen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericBlue)).BeginInit();
             this.SuspendLayout();
             // 
             // openGlControl
@@ -74,46 +82,14 @@
             // 
             this.timerAvion.Tick += new System.EventHandler(this.timerAvion_Tick);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "zuta",
-            "plava",
-            "crvena",
-            "zelena",
-            "bela"});
-            this.comboBox1.Location = new System.Drawing.Point(711, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "zuta";
-            // 
             // timerSijalice
             // 
             this.timerSijalice.Interval = 1000;
             this.timerSijalice.Tick += new System.EventHandler(this.timerSijalice_Tick);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "5 sekundi",
-            "4 sekunde",
-            "3 sekunde",
-            "2 sekunde",
-            "1 sekund",
-            "0.5 sekundi",
-            "0.1 sekundi"});
-            this.comboBox2.Location = new System.Drawing.Point(666, 76);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "1 sekund";
-            // 
             // numericSFactor
             // 
-            this.numericSFactor.Location = new System.Drawing.Point(666, 116);
+            this.numericSFactor.Location = new System.Drawing.Point(666, 146);
             this.numericSFactor.Maximum = new decimal(new int[] {
             50,
             0,
@@ -137,21 +113,106 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(699, 100);
+            this.label1.Location = new System.Drawing.Point(699, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Skaliranje sijalica";
+            // 
+            // numericSInterval
+            // 
+            this.numericSInterval.Location = new System.Drawing.Point(666, 107);
+            this.numericSInterval.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericSInterval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericSInterval.Name = "numericSInterval";
+            this.numericSInterval.Size = new System.Drawing.Size(120, 20);
+            this.numericSInterval.TabIndex = 8;
+            this.numericSInterval.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(629, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Interval za sijalice u sekundama";
+            // 
+            // numericGreen
+            // 
+            this.numericGreen.Location = new System.Drawing.Point(540, 68);
+            this.numericGreen.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericGreen.Name = "numericGreen";
+            this.numericGreen.Size = new System.Drawing.Size(120, 20);
+            this.numericGreen.TabIndex = 10;
+            // 
+            // numericRed
+            // 
+            this.numericRed.Location = new System.Drawing.Point(414, 68);
+            this.numericRed.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericRed.Name = "numericRed";
+            this.numericRed.Size = new System.Drawing.Size(120, 20);
+            this.numericRed.TabIndex = 11;
+            this.numericRed.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            // 
+            // numericBlue
+            // 
+            this.numericBlue.Location = new System.Drawing.Point(666, 68);
+            this.numericBlue.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericBlue.Name = "numericBlue";
+            this.numericBlue.Size = new System.Drawing.Size(120, 20);
+            this.numericBlue.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(623, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "RGB komponenta za boju sijalica";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 578);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.numericBlue);
+            this.Controls.Add(this.numericRed);
+            this.Controls.Add(this.numericGreen);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.numericSInterval);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericSFactor);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.openGlControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -160,6 +221,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Projektni zadatak 6.2 – Poletanje aviona";
             ((System.ComponentModel.ISupportInitialize)(this.numericSFactor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericGreen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericBlue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,11 +235,15 @@
         private Tao.Platform.Windows.SimpleOpenGlControl openGlControl;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Timer timerAvion;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Timer timerSijalice;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.NumericUpDown numericSFactor;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericSInterval;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown numericGreen;
+        private System.Windows.Forms.NumericUpDown numericRed;
+        private System.Windows.Forms.NumericUpDown numericBlue;
+        private System.Windows.Forms.Label label3;
     }
 }
 

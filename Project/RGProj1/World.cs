@@ -100,7 +100,10 @@ namespace RGProj1
         /// Rotacija po Y osi, posto avion polijece u jednom smjeru ona se nikada ne mijenja.
         /// </summary>
         public float planeRotationZ = 0.0f;
-        public string boja = "zuta";
+        /// <summary>
+        /// Boja koja se bira iz forme.
+        /// </summary>
+        private int[] color = new int[3] { 128, 128, 128 };
         static int[] textures = null;
         //public string faktorS = "1";
         static string[] textureFiles = { "..//..//images//Seamless ground dirt texture.jpg", "..//..//images//asphalt_texture415.jpg" };
@@ -157,6 +160,16 @@ namespace RGProj1
             set { sFactor = value; }
         }
 
+        public int[] Color
+        {
+            get { return color; }
+            set
+            {
+                color[0] = value[0];
+                color[1] = value[1];
+                color[2] = value[2];
+            }
+        }
         #endregion Properties
 
         #region Konstruktori
@@ -215,6 +228,7 @@ namespace RGProj1
             Gl.glRotatef(xRotationAngle, 1.0f, 0.0f, 0.0f);
             Gl.glRotatef(yRotationAngle, 0.0f, 1.0f, 0.0f);
 
+            // TODO 6 Pozicioniraj kameru.
             Glu.gluLookAt(-260.0f, 60.0f, -80.0f, -10.0f, 10.0f, 620.0f, 0.0f, 1.0f, 0.0f);
 
             Sadrzaj();
@@ -237,19 +251,20 @@ namespace RGProj1
             float[] sourceLightAmbient = { 1f, 1f, 1f, 1.0f };
             float[] sourceLightDiffuse = { 0.6f, 0.6f, 0.6f, 1.0f };
             // Pridruzi komponente svetlosnom izvoru 0
+            // TODO 2b postavi boju da bude bijela.
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_AMBIENT, sourceLightAmbient);
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_DIFFUSE, sourceLightDiffuse);
             // Podesi parametre tackastog svetlosnog izvora
+            // TODO 2a postavi reflektorski svjetlosni izvor.
             Gl.glLightf(Gl.GL_LIGHT0, Gl.GL_SPOT_CUTOFF, 30.0f);
             // Ukljuci svetlosni izvor
             Gl.glEnable(Gl.GL_LIGHT0);
 
-
+            // TODO 3 postavi wrapping da bude repreat. Podesi filtere da koristi linearno filtriranje i nacin stapanja da bude modulate.
             Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_MIN_FILTER, Gl.GL_LINEAR);
             Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_MAG_FILTER, Gl.GL_LINEAR);
             Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_WRAP_S, Gl.GL_REPEAT);
             Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_WRAP_T, Gl.GL_REPEAT);
-
             // texture enviroment, nacin stapanja tekture sa materijalom
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_MODULATE);
 
@@ -295,6 +310,7 @@ namespace RGProj1
             Gl.glLoadIdentity();
 
             // pozicioniranje svetla pre transformacija, kako bismo dobili stacionarni izvor svetlosti
+            // TODO 2c postavi koordinate svjetla.
             float[] sourceLightPos = { 0, 650f, 1200f, 1.0f };
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_POSITION, sourceLightPos);
         }
@@ -334,7 +350,6 @@ namespace RGProj1
             Gl.glVertex3f(-800.0f, 0.5f, 800.0f);
             Gl.glTexCoord2f(1.0f, 0.0f);
             Gl.glVertex3f(800.0f, 0.5f, 800.0f);
-            // 
             Gl.glNormal3fv(Lighting.FindFaceNormal(800 / 2, 0.5f / 2, 800 / 2, 0.5f / 2, 0.5f / 2, -800 / 2, -800 / 2, 0.5f / 2, -800 / 2));
             Gl.glNormal3fv(Lighting.FindFaceNormal(-800 / 2, 0.5f / 2, -800 / 2, -800f / 2, 0.5f / 2, 800 / 2, 800 / 2, 0.5f / 2, 800 / 2));
 
@@ -342,6 +357,7 @@ namespace RGProj1
             Gl.glPopMatrix();
             Gl.glMatrixMode(Gl.GL_MODELVIEW);
             Gl.glBindTexture(Gl.GL_TEXTURE_2D, 0);
+            // TODO 10 Stapanje tesksture sa materijalom GL_ADD.
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_ADD);
             Gl.glPopMatrix();
         }
@@ -350,12 +366,15 @@ namespace RGProj1
         {
 
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_DECAL);
+            // TODO 4 Pridruzi pisti teksturu asfalta.
             Gl.glBindTexture(Gl.GL_TEXTURE_2D, textures[(int)TextureObject.Runway]);
 
             runway.SetSize(700, 1600, 15);
             Gl.glPushMatrix();
             Gl.glTranslatef(0.0f, 10.0f, 0.0f);
             Gl.glRotatef(90, 1.0f, 0.0f, 0.0f);
+            Gl.glNormal3fv(Lighting.FindFaceNormal(8 / 2, 0.5f / 2, 60 / 2, 8 / 2, 0.5f / 2, -60 / 2, -8 / 2, 0.5f / 2, -60 / 2));
+            Gl.glNormal3fv(Lighting.FindFaceNormal(-8 / 2, 0.5f / 2, -60 / 2, -8 / 2, 0.5f / 2, 60 / 2, 8 / 2, 0.5f / 2, 60 / 2));
             runway.Draw();
 
             Gl.glPopMatrix();
@@ -375,8 +394,7 @@ namespace RGProj1
             Gl.glVertex3f(-8.0f, 0.5f, -60.0f);
             Gl.glVertex3f(-8.0f, 0.5f, 60.0f);
             Gl.glVertex3f(8.0f, 0.5f, 60.0f);
-            Gl.glNormal3fv(Lighting.FindFaceNormal(8 / 2, 0.5f / 2, 60 / 2, 8 / 2, 0.5f / 2, -60 / 2, -8 / 2, 0.5f / 2, -60 / 2));
-            Gl.glNormal3fv(Lighting.FindFaceNormal(-8 / 2, 0.5f / 2, -60 / 2, -8 / 2, 0.5f / 2, 60 / 2, 8 / 2, 0.5f / 2, 60 / 2));
+            
             Gl.glEnd();
             Gl.glEndList();
 
@@ -423,6 +441,7 @@ namespace RGProj1
         private void Sijalice()
         {
             Gl.glPushMatrix();
+            /*
             switch (boja)
             {
                 case "zuta": Gl.glColor3ub(255, 255, 0); break;
@@ -431,8 +450,9 @@ namespace RGProj1
                 case "bela": Gl.glColor3ub(255, 255, 255); break;
                 case "zelena": Gl.glColor3ub(0, 255, 0); break;
                 case "crna": Gl.glColor3ub(0, 0, 0); break;
-            }
-
+            }*/
+            Gl.glColor3f((float)color[0]/255, (float)color[1]/255, (float)color[2]/255);
+            
             //sFaktor = float.Parse(faktorS, System.Globalization.CultureInfo.InvariantCulture);
 
             gluObject = Glu.gluNewQuadric();
@@ -511,7 +531,7 @@ namespace RGProj1
             float[] lightAmbient = { 0f, 1f, 0.0f, 1.0f };
             float[] lightDiffuse = { 0.6f, 0.6f, 0.6f, 1f };
 
-
+            // TODO 9 tackasti izbor iznad aviona.
             // Pridruzi komponente svetlosnom izvoru 0
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_AMBIENT, lightAmbient);
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_DIFFUSE, lightDiffuse);

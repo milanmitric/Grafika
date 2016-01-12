@@ -54,6 +54,7 @@ namespace RGProj1
         {
             switch (e.KeyCode)
             {
+                // TODO 8 Interakcija sa korisnikom.
                 case Keys.F2: this.Close(); break;
                 case Keys.F: if (!animacija) { m_world.RotationX -= 4.0f; m_world.Resize(); } break;
                 case Keys.R: if (!animacija) { m_world.RotationX += 4.0f; m_world.Resize(); } break;
@@ -84,6 +85,7 @@ namespace RGProj1
             this.Close();
         }
 
+        // TODO 12 Animacija kretanja aviona.
         private void timerAvion_Tick(object sender, EventArgs e)
         {
             if (m_world.planePositionZ > 0)
@@ -115,35 +117,39 @@ namespace RGProj1
             openGlControl.Refresh();
         }
 
+        // TODO 12 Animacija paljenja/gasenja sijalica.
         private void timerSijalice_Tick(object sender, EventArgs e)
         {
-            switch (comboBox2.Text)
-            {
-                case "5 sekundi": timerSijalice.Interval = 5000; break;
-                case "4 sekunde": timerSijalice.Interval = 4000; break;
-                case "3 sekunde": timerSijalice.Interval = 3000; break;
-                case "2 sekunde": timerSijalice.Interval = 2000; break;
-                case "1 sekund": timerSijalice.Interval = 1000; break;
-                case "0.5 sekundi": timerSijalice.Interval = 500; break;
-                case "0.1 sekundi": timerSijalice.Interval = 100; break;
-
-            }
+            // TODO 7b Izbor intevala paljenja/gasenja sijalica.
+            timerSijalice.Interval = (int)numericSInterval.Value * 1000;
+            
+            /*
             if (m_world.boja == "crna")
                 m_world.boja = comboBox1.Text;
-            else m_world.boja = "crna";
+            else m_world.boja = "crna";*/
+            // Ukoliko je bila crna postavi na onu koja je trenutno aktivna.
+            if (m_world.Color[0] == 0 && m_world.Color[1] == 0 && m_world.Color[2] == 0)
+            {
+                // TODO 7a Izbor boja sijalice.
+                int[] colors = new int[3] { (int)numericRed.Value, (int)numericGreen.Value, (int)numericBlue.Value };
+                m_world.Color = colors;
+            }
+            // Ukoliko nije postavi na  crnu.
+            else
+            {
+                m_world.Color = new int[3] { 0, 0, 0 };
+            }
             m_world.Resize();
             openGlControl.Refresh();
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         #endregion Rukovaoci dogadjajima OpenGL kontrole
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            // TODO 7c Izbor faktora skaliranja.
             m_world.Sfactor = (float)numericSFactor.Value / 10;
         }
 
