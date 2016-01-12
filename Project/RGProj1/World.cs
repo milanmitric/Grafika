@@ -231,7 +231,7 @@ namespace RGProj1
             // TODO 6 Pozicioniraj kameru.
             Glu.gluLookAt(-260.0f, 60.0f, -80.0f, -10.0f, 10.0f, 620.0f, 0.0f, 1.0f, 0.0f);
 
-            Sadrzaj();
+            DrawContent();
             Gl.glFlush();
         }
 
@@ -320,18 +320,24 @@ namespace RGProj1
             scene.Dispose();
         }
 
-        private void Sadrzaj()
+        /// <summary>
+        /// Crta sadrzaj citave scene.
+        /// </summary>
+        private void DrawContent()
         {
-            Podloga();
-            Staza();
-            Linije();
-            Sijalice();
-            IscrtavanjeScene();
+            DrawPitch();
+            DrawRunway();
+            DrawLines();
+            DrawBulbs();
+            DrawModel();
             Gl.glPopMatrix();
-            Tekst();
+            DrawText();
         }
 
-        private void Podloga()
+        /// <summary>
+        /// Crta podlogu.
+        /// </summary>
+        private void DrawPitch()
         {
             Gl.glPushMatrix();
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_DECAL);
@@ -362,7 +368,10 @@ namespace RGProj1
             Gl.glPopMatrix();
         }
 
-        private void Staza()
+        /// <summary>
+        /// Crta pistu.
+        /// </summary>
+        private void DrawRunway()
         {
 
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_DECAL);
@@ -384,7 +393,10 @@ namespace RGProj1
             Gl.glBindTexture(Gl.GL_TEXTURE_2D, 0);
         }
 
-        private void Linije()
+        /// <summary>
+        /// Crta linije po pisti.
+        /// </summary>
+        private void DrawLines()
         {
 
             firstLinesList = Gl.glGenLists(1);
@@ -438,23 +450,14 @@ namespace RGProj1
             Gl.glPopMatrix();
         }
 
-        private void Sijalice()
+        /// <summary>
+        /// Crta sijalice.
+        /// </summary>
+        private void DrawBulbs()
         {
             Gl.glPushMatrix();
-            /*
-            switch (boja)
-            {
-                case "zuta": Gl.glColor3ub(255, 255, 0); break;
-                case "plava": Gl.glColor3ub(0, 0, 255); break;
-                case "crvena": Gl.glColor3ub(255, 0, 0); break;
-                case "bela": Gl.glColor3ub(255, 255, 255); break;
-                case "zelena": Gl.glColor3ub(0, 255, 0); break;
-                case "crna": Gl.glColor3ub(0, 0, 0); break;
-            }*/
             Gl.glColor3f((float)color[0]/255, (float)color[1]/255, (float)color[2]/255);
             
-            //sFaktor = float.Parse(faktorS, System.Globalization.CultureInfo.InvariantCulture);
-
             gluObject = Glu.gluNewQuadric();
             Glu.gluQuadricOrientation(gluObject, Glu.GLU_OUTSIDE);
             Gl.glScalef(sFactor, sFactor, sFactor);
@@ -517,7 +520,10 @@ namespace RGProj1
             Gl.glPopMatrix();
         }
 
-        private void IscrtavanjeScene()
+        /// <summary>
+        /// Crta model aviona.
+        /// </summary>
+        private void DrawModel()
         {
             Gl.glTranslatef(planePositionX, planePositionY, planePositionZ);
             Gl.glScalef(0.11f, 0.11f, 0.11f);
@@ -548,7 +554,10 @@ namespace RGProj1
 
         }
 
-        private void Tekst()
+        /// <summary>
+        /// Crta tekst.
+        /// </summary>
+        private void DrawText()
         {
             Gl.glMatrixMode(Gl.GL_PROJECTION);
             Gl.glLoadIdentity();
