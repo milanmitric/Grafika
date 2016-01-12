@@ -1,0 +1,15 @@
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.exe
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.pdb
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\Assimp32.dll
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\Assimp64.dll
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\images\asphalt_texture415.jpg
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\RGProj1.exe
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\RGProj1.pdb
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\bin\Debug\AssimpNet.dll
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\Project.csproj.GenerateResource.Cache

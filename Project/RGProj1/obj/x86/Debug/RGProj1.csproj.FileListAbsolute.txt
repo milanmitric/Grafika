@@ -1,0 +1,84 @@
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp32.dll
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp64.dll
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\asphalt.jpg
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.exe
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.pdb
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\AssimpNet.dll
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.csproj.GenerateResource.Cache
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.exe
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.pdb
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.csprojResolveAssemblyReference.cache
+I:\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.exe
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.pdb
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp32.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp64.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.exe
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.pdb
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\AssimpNet.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Tao.FreeType.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Tao.OpenGl.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Tao.Platform.Windows.dll
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\asphalt_texture415.jpg
+F:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\GenerateResource.read.1497.tlog
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.exe
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.pdb
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp32.dll
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Assimp64.dll
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\asphalt_texture415.jpg
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.exe
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\RGProj1.pdb
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\bin\Debug\AssimpNet.dll
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.csprojResolveAssemblyReference.cache
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+I:\New folder (3)\New folder (2)\Predmetni projekat -  faza 1\RGProj1\obj\x86\Debug\RGProj1.csproj.GenerateResource.Cache
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\RGProj1.exe
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\RGProj1.pdb
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\Assimp32.dll
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\Assimp64.dll
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\images\asphalt_texture415.jpg
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\RGProj1.exe
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\RGProj1.pdb
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\bin\Debug\AssimpNet.dll
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\GenerateResource.read.1497.tlog
+J:\New folder (3)\New folder (2)\Grafika\RGProj1\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.exe
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.pdb
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\Assimp32.dll
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\Assimp64.dll
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\images\asphalt_texture415.jpg
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\images\Seamless ground dirt texture.jpg
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\Model\Avion\Arch73_04_Diff (copy).jpg
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\Model\Avion\Airplane N061213.3DS
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\RGProj1.exe
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\RGProj1.pdb
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\bin\Debug\AssimpNet.dll
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.csprojResolveAssemblyReference.cache
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.MainForm.resources
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
+D:\Faks\IV godina\Racunarska grafika\Grafika\RGProj1\obj\x86\Debug\RGProj1.csproj.GenerateResource.Cache
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.exe
+D:\Faks\IV godina\Racunarska grafika\Projects\Project\RGProj1\obj\x86\Debug\RGProj1.pdb
