@@ -36,7 +36,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.timerSijalice = new System.Windows.Forms.Timer(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.numericSFactor = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSFactor)).BeginInit();
             this.SuspendLayout();
             // 
             // openGlControl
@@ -103,34 +105,51 @@
             "1 sekund",
             "0.5 sekundi",
             "0.1 sekundi"});
-            this.comboBox2.Location = new System.Drawing.Point(665, 39);
+            this.comboBox2.Location = new System.Drawing.Point(666, 76);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.Text = "1 sekund";
             // 
-            // comboBox3
+            // numericSFactor
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1.02",
-            "1.01",
-            "1.0",
-            "0.9",
-            "0.8"});
-            this.comboBox3.Location = new System.Drawing.Point(665, 67);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 5;
-            this.comboBox3.Text = "1";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.numericSFactor.Location = new System.Drawing.Point(666, 116);
+            this.numericSFactor.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numericSFactor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericSFactor.Name = "numericSFactor";
+            this.numericSFactor.Size = new System.Drawing.Size(120, 20);
+            this.numericSFactor.TabIndex = 6;
+            this.numericSFactor.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericSFactor.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(699, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Skaliranje sijalica";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 578);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericSFactor);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_reset);
@@ -140,7 +159,9 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Projektni zadatak 6.2 – Poletanje aviona";
+            ((System.ComponentModel.ISupportInitialize)(this.numericSFactor)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -152,7 +173,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Timer timerSijalice;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.NumericUpDown numericSFactor;
+        private System.Windows.Forms.Label label1;
     }
 }
 

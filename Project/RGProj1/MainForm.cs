@@ -137,10 +137,15 @@ namespace RGProj1
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            m_world.faktorS = comboBox3.Text;
+            
         }
 
         #endregion Rukovaoci dogadjajima OpenGL kontrole
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            m_world.Sfactor = (float)numericSFactor.Value / 10;
+        }
 
     }
 }

@@ -60,23 +60,54 @@ namespace RGProj1
         /// Lista linija koje idu poprijeko ispred aviona.
         /// </summary>
         private int secondLinesList;
-
-        
+        /// <summary>
+        /// Enumeracija za teksture.
+        /// </summary>
         public enum TextureObject { Groundwork = 0, Runway };
+        /// <summary>
+        /// Brojac za teksture.
+        /// </summary>
         private readonly int textureCount = Enum.GetNames(typeof(TextureObject)).Length;
+        /// <summary>
+        /// Pomocna promjenljiva za teksture.
+        /// </summary>
         Bitmap image;
+        /// <summary>
+        /// X koordinata aviona.
+        /// </summary>
         public float planePositionX = -1.0f;
+        /// <summary>
+        /// Y koordinata aviona.
+        /// </summary>
         public float planePositionY = 60.0f;
+        /// <summary>
+        /// Z koordinata aviona.
+        /// </summary>
         public float planePositionZ = 680.0f;
+        /// <summary>
+        /// Ugao rotacije koji se koristi da bi se u animaciji prikazalo kako avion polijece.
+        /// </summary>
         public float planeRotationAngle = 0.0f;
+        /// <summary>
+        /// Rotacija po X osi, koristi se kada avion polijece.
+        /// </summary>
         public float planeRotationX = 0.0f;
+        /// <summary>
+        /// Rotacija po Y osi, posto avion polijece u jednom smjeru ona se nikada ne mijenja.
+        /// </summary>
         public float planeRotationY = 0.0f;
+        /// <summary>
+        /// Rotacija po Y osi, posto avion polijece u jednom smjeru ona se nikada ne mijenja.
+        /// </summary>
         public float planeRotationZ = 0.0f;
         public string boja = "zuta";
         static int[] textures = null;
-        public string faktorS = "1";
+        //public string faktorS = "1";
         static string[] textureFiles = { "..//..//images//Seamless ground dirt texture.jpg", "..//..//images//asphalt_texture415.jpg" };
-        private float sFaktor = 0;
+        /// <summary>
+        /// Faktor skaliranja za sijalice.
+        /// </summary>
+        private float sFactor = 1;
         #endregion Atributi
 
         #region Properties
@@ -115,6 +146,15 @@ namespace RGProj1
         {
             get { return height; }
             set { height = value; }
+        }
+
+        /// <summary>
+        /// Javni getter i setter za faktor skaliranja.
+        /// </summary>
+        public float Sfactor
+        {
+            get { return sFactor; }
+            set { sFactor = value; }
         }
 
         #endregion Properties
@@ -393,11 +433,11 @@ namespace RGProj1
                 case "crna": Gl.glColor3ub(0, 0, 0); break;
             }
 
-            sFaktor = float.Parse(faktorS, System.Globalization.CultureInfo.InvariantCulture);
+            //sFaktor = float.Parse(faktorS, System.Globalization.CultureInfo.InvariantCulture);
 
             gluObject = Glu.gluNewQuadric();
             Glu.gluQuadricOrientation(gluObject, Glu.GLU_OUTSIDE);
-            Gl.glScalef(sFaktor, sFaktor, sFaktor);
+            Gl.glScalef(sFactor, sFactor, sFactor);
             Gl.glTranslatef(-240f, 16.0f, 760.0f);
             Glu.gluSphere(gluObject, 13.0f, 8, 8);
             Gl.glTranslatef(0.0f, 0.0f, -117.0f);
