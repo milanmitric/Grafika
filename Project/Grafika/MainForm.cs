@@ -129,7 +129,7 @@ namespace RGProj1
             openGlControl.Refresh();
         }
 
-        // TODO 12 Animacija paljenja/gasenja sijalica.
+        // TODO 11 Animacija paljenja/gasenja sijalica.
         private void timerSijalice_Tick(object sender, EventArgs e)
         {
             // TODO 7b Izbor intevala paljenja/gasenja sijalica.
