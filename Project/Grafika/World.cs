@@ -314,6 +314,7 @@ namespace RGProj1
 
             // pozicioniranje svetla pre transformacija, kako bismo dobili stacionarni izvor svetlosti
             // TODO 2c postavi koordinate svjetla.
+            // Ako se stavi za z-koordinatu -1200 tada se vidi da bude iznad aviona trenutno.
             float[] sourceLightPos = { 0, 650f, 1200f, 1.0f };
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_POSITION, sourceLightPos);
         }
@@ -461,7 +462,8 @@ namespace RGProj1
         {
             Gl.glPushMatrix();
             Gl.glColor3f((float)color[0]/255, (float)color[1]/255, (float)color[2]/255);
-            
+            // TODO 2d Ukljuci automatsko generisanje normala.
+            Gl.glEnable(Gl.GL_NORMALIZE);
             gluObject = Glu.gluNewQuadric();
             Glu.gluQuadricOrientation(gluObject, Glu.GLU_OUTSIDE);
             Gl.glScalef(sFactor, sFactor, sFactor);
@@ -553,7 +555,7 @@ namespace RGProj1
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_SPOT_DIRECTION, lightSmer);
             Gl.glLightf(Gl.GL_LIGHT1, Gl.GL_SPOT_CUTOFF, 180f);
             // Ukljuci svetlosni izvor
-            //Gl.glEnable(Gl.GL_LIGHT1);
+            Gl.glEnable(Gl.GL_LIGHT1);
             // pozicioniranje svetla
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_POSITION, lightPos);
 
