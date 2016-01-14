@@ -32,7 +32,7 @@ namespace RGProj1
             timerSijalice.Enabled = true;
             try
             {
-                m_world = new World(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Model\\Avion"), "Airplane N061213.3DS", openGlControl.Width, openGlControl.Height);
+                m_world = new World(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Model\\Avion"), "BA 737-800.3ds", openGlControl.Width, openGlControl.Height);
             }
             catch (Exception e)
             {
@@ -99,7 +99,9 @@ namespace RGProj1
                     m_world.planePositionZ -= 50;
                     m_world.planePositionY += 10;
                     m_world.planeRotationAngle -= 1.8f;
-                    m_world.planeRotationX = 1.0f;
+                    // Ukoliko zelimo da se zakrivi na desno prilikom polijetanja, staviti ovu drugu.
+                    m_world.planeRotationX = 0.0f;
+                    //m_world.planeRotationX = 1.0f;
                 }
                 else
                 {
@@ -123,10 +125,6 @@ namespace RGProj1
             // TODO 7b Izbor intevala paljenja/gasenja sijalica.
             timerSijalice.Interval = (int)numericSInterval.Value * 1000;
             
-            /*
-            if (m_world.boja == "crna")
-                m_world.boja = comboBox1.Text;
-            else m_world.boja = "crna";*/
             // Ukoliko je bila crna postavi na onu koja je trenutno aktivna.
             if (m_world.Color[0] == 0 && m_world.Color[1] == 0 && m_world.Color[2] == 0)
             {

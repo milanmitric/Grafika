@@ -104,6 +104,9 @@ namespace RGProj1
         /// Boja koja se bira iz forme.
         /// </summary>
         private int[] color = new int[3] { 128, 128, 128 };
+        /// <summary>
+        /// Pokazivaci za strukture.
+        /// </summary>
         static int[] textures = null;
         //public string faktorS = "1";
         static string[] textureFiles = { "..//..//images//Seamless ground dirt texture.jpg", "..//..//images//asphalt_texture415.jpg" };
@@ -525,10 +528,14 @@ namespace RGProj1
         /// </summary>
         private void DrawModel()
         {
+            Gl.glPushMatrix();
             Gl.glTranslatef(planePositionX, planePositionY, planePositionZ);
-            Gl.glScalef(0.11f, 0.11f, 0.11f);
+            Gl.glTranslatef(0, -50, 0);
+            Gl.glTranslatef(130, 0, 0);
+            Gl.glTranslatef(0, 0, 100);
+            Gl.glScalef(70, 70, 70);
             Gl.glRotatef(-2, 1.0f, 0.0f, 0.0f);
-            Gl.glRotatef(180, 0.0f, 1.0f, 0.0f);
+            Gl.glRotatef(-90, 0.0f, 1.0f, 0.0f);
             Gl.glRotatef(planeRotationAngle, planeRotationX, planeRotationY, planeRotationZ);
 
 
@@ -550,7 +557,7 @@ namespace RGProj1
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_POSITION, lightPos);
 
             scene.Draw();
-
+            Gl.glPopMatrix();
 
         }
 
