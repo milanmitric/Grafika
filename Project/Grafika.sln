@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "RGProj1\Project.csproj", "{EDEB3808-CD64-478A-B19C-65CEF86B5044}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Grafika\Project.csproj", "{EDEB3808-CD64-478A-B19C-65CEF86B5044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

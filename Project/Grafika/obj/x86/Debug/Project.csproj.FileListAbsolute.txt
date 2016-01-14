@@ -27,3 +27,17 @@ D:\GitRepos\Grafika\Grafika\Project\RGProj1\obj\x86\Debug\RGProj1.MainForm.resou
 D:\GitRepos\Grafika\Grafika\Project\RGProj1\obj\x86\Debug\RGProj1.Properties.Resources.resources
 D:\GitRepos\Grafika\Grafika\Project\RGProj1\obj\x86\Debug\Project.csproj.GenerateResource.Cache
 D:\GitRepos\Grafika\Grafika\Project\RGProj1\bin\Debug\Model\Avion\BA 737-800.3ds
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\RGProj1.exe
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\RGProj1.pdb
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\Assimp32.dll
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\Assimp64.dll
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\images\asphalt_texture415.jpg
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\images\Seamless ground dirt texture.jpg
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\Model\Avion\BA 737-800.3ds
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\RGProj1.exe
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\RGProj1.pdb
+D:\GitRepos\Grafika\Grafika\Project\Grafika\bin\Debug\AssimpNet.dll
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\Project.csprojResolveAssemblyReference.cache
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\RGProj1.MainForm.resources
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\RGProj1.Properties.Resources.resources
+D:\GitRepos\Grafika\Grafika\Project\Grafika\obj\x86\Debug\Project.csproj.GenerateResource.Cache
