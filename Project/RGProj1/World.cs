@@ -258,7 +258,7 @@ namespace RGProj1
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_AMBIENT, sourceLightAmbient);
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_DIFFUSE, sourceLightDiffuse);
             // Podesi parametre tackastog svetlosnog izvora
-            // TODO 2a postavi reflektorski svjetlosni izvor.
+            //TODO 2a postavi reflektorski svjetlosni izvor.
             Gl.glLightf(Gl.GL_LIGHT0, Gl.GL_SPOT_CUTOFF, 30.0f);
             // Ukljuci svetlosni izvor
             Gl.glEnable(Gl.GL_LIGHT0);
@@ -343,7 +343,8 @@ namespace RGProj1
         private void DrawPitch()
         {
             Gl.glPushMatrix();
-            Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_DECAL);
+            // TODO 5 Podlozi pridruziti teskturu zemlje.
+            Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_ADD);
             Gl.glBindTexture(Gl.GL_TEXTURE_2D, textures[(int)TextureObject.Groundwork]);
 
             Gl.glMatrixMode(Gl.GL_TEXTURE);
@@ -377,7 +378,7 @@ namespace RGProj1
         private void DrawRunway()
         {
 
-            Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_DECAL);
+            Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_MODULATE);
             // TODO 4 Pridruzi pisti teksturu asfalta.
             Gl.glBindTexture(Gl.GL_TEXTURE_2D, textures[(int)TextureObject.Runway]);
 
@@ -539,7 +540,7 @@ namespace RGProj1
             Gl.glRotatef(planeRotationAngle, planeRotationX, planeRotationY, planeRotationZ);
 
 
-            float[] lightPos = { -1, 20f, -1, 1.0f };
+            float[] lightPos = { planePositionX, planePositionY + 20f, planePositionZ, 1.0f };
             float[] lightSmer = { 0.0f, -1.0f, 0.0f };
             float[] lightAmbient = { 0f, 1f, 0.0f, 1.0f };
             float[] lightDiffuse = { 0.6f, 0.6f, 0.6f, 1f };
@@ -552,7 +553,7 @@ namespace RGProj1
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_SPOT_DIRECTION, lightSmer);
             Gl.glLightf(Gl.GL_LIGHT1, Gl.GL_SPOT_CUTOFF, 180f);
             // Ukljuci svetlosni izvor
-            Gl.glEnable(Gl.GL_LIGHT1);
+            //Gl.glEnable(Gl.GL_LIGHT1);
             // pozicioniranje svetla
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_POSITION, lightPos);
 

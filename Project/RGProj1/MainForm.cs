@@ -88,6 +88,11 @@ namespace RGProj1
         // TODO 12 Animacija kretanja aviona.
         private void timerAvion_Tick(object sender, EventArgs e)
         {
+            numericRed.Enabled = false;
+            numericGreen.Enabled = false;
+            numericBlue.Enabled = false;
+            numericSFactor.Enabled = false;
+            numericSInterval.Enabled = false;
             if (m_world.planePositionZ > 0)
             {
                 m_world.planePositionZ -= 50;
@@ -105,6 +110,11 @@ namespace RGProj1
                 }
                 else
                 {
+                    numericRed.Enabled = true;
+                    numericGreen.Enabled = true;
+                    numericBlue.Enabled = true;
+                    numericSFactor.Enabled = true;
+                    numericSInterval.Enabled = true;
                     timerAvion.Enabled = false;
                     animacija = false;
                     m_world.planeRotationAngle = 0.0f;
